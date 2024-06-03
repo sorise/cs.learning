@@ -1,2 +1,4 @@
-# CS.Learning
-CSharp Program Langauge Study Note.
+# C#.Learning
+> **介绍** ：C# 学习笔记，包含了常用的语法和特殊博客性质的笔记。
+
+----
