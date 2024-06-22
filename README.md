@@ -4,4 +4,12 @@
 ----
 
 ### 目录
-- [.NET C# 核心语法](csharp)
+- [.NET Core - C# 核心语法](docs/csharp)
+
+
+
+#### 参考资料
+* [C# Language Document](https://learn.microsoft.com/zh-cn/dotnet/csharp)
+* [dotnet.microsoft.com 官方网站](https://dotnet.microsoft.com/zh-cn/)
+* [.NET Download](https://dotnet.microsoft.com/zh-cn/download/dotnet) **,** [.NET 基础知识文档](https://learn.microsoft.com/zh-cn/dotnet/fundamentals/)
+* [.NET CLI](https://learn.microsoft.com/zh-cn/dotnet/core/tools/)、[NuGet](https://learn.microsoft.com/zh-cn/nuget/what-is-nuget)
