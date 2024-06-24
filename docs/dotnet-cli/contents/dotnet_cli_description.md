@@ -75,4 +75,37 @@ dotnet exec --runtimeconfig myapp.runtimeconfig.json myapp.dll
 ```
 仅当 dotnet 使用 exec 命令运行应用程序时，以下选项才可用。
 * **--depsfile \<PATH\>** deps.json 文件的路径。 `.deps.json` 文件是一个配置文件，其中包含有关运行应用程序所需的依赖项的信息。 此文件由 .NET SDK 生成。
-* **--runtimeconfig \<PATH\>** runtimeconfig.template.json 文件的路径。 runtimeconfig.json 文件包含运行时设置，通常命名为 <applicationname>.runtimeconfig.json。 [有关详细信息请参阅 .NET 运行时配置设置](https://learn.microsoft.com/zh-cn/dotnet/core/runtime-config/#runtimeconfigjson)。 
+* **--runtimeconfig \<PATH\>** runtimeconfig.template.json 文件的路径。 runtimeconfig.json 文件包含运行时设置，通常命名为 <applicationname>.runtimeconfig.json。 [有关详细信息请参阅 .NET 运行时配置设置](https://learn.microsoft.com/zh-cn/dotnet/core/runtime-config/#runtimeconfigjson)。
+
+### 1.4 例子
+
+查看是否安装 dotnet
+```shell
+#版本信息
+dotnet --version
+#基本信息 
+dotnet --info
+```
+在当前目录创建一个 `C#` 控制台程序
+```shell
+dotnet new console -lang "C#" --use-program-main
+```
+然后我们看到代码
+```csharp
+namespace workshop;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
+编译运行
+```shell
+dotnet build
+
+dotnet run
+```
+
