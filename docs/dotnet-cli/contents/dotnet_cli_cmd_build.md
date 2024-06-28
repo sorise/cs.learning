@@ -30,9 +30,25 @@ dotnet build -h|--help
   * osx-x64、osx-arm64
   * ios-arm64、android-arm64
 * **-p|--property:\<PROPERTYNAME\>=\<VALUE\>** 设置一个或多个 MSBuild 属性。 指定以分号分隔的多个属性，或通过重复该选项指定多个属性：
+> --property:\<NAME1\>=\<VALUE1\>;\<NAME2\>=\<VALUE2\>  
+> --property:\<NAME1\>=\<VALUE1\> --property:\<NAME2\>=\<VALUE2\>
+* **-c|--configuration \<CONFIGURATION\>** 定义生成配置。 大多数项目的默认配置为 Debug，但你可以覆盖项目中的生成配置设置。
+* **--source \<SOURCE\>** 要在还原操作期间使用的 NuGet 包源的 URI。
 
 ### [2. 使用例子](#)
 生成项目及其依赖项：
 ```shell
 dotnet build
+```
+使用“发布”配置生成项目及其依赖项、为特定运行时生成项目及其依赖项
+```shell
+dotnet build --configuration Release --runtime linux-x64
+```
+生成项目，并在还原操作过程中使用指定的 NuGet 包源：
+```shell
+dotnet build --source c:\packages\mypackages
+```
+生成项目并设置版本 1.2.3.4 作为使用 -pMSBuild 选项的生成参数：
+```shell
+dotnet build -p:Version=1.2.3.4
 ```

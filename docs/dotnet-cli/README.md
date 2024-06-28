@@ -24,7 +24,7 @@ dotnet exec ./bin/Debug/net6.0/MyApp.dll arg1 arg2
 ```
 **常用命令:**
 
-| [dotnet](contents/dotnet_cli_description.md) | [dotnet new](contents/dotnet_cli_cmd_new.md) | [dotnet build](contents/dotnet_cli_cmd_build.md) | dotnet run     | dotnet store | dotnet clean   | dotnet help   |
-|:---------------------|:-------------------------|:-------------------------------------------------|:---------------|:-------------|:---------------|:--------------|
-| **dotnet test**      | **dotnet vstest**        | **dotnet pack**                                  | **dotnet migrate** | **dotnet sln**   | **dotnet publish** | **dotnet exec** |
-| **dotnet restore**   |                          |                                                  |                |              |                |               |
+| [dotnet](contents/dotnet_cli_description.md) | [dotnet new](contents/dotnet_cli_cmd_new.md) | [dotnet build](contents/dotnet_cli_cmd_build.md) | [dotnet run](contents/dotnet_cli_cmd_run.md) | dotnet store | dotnet clean   | dotnet help   |
+|:---------------------|:-------------------------|:-------------------------------------------------|:---------------------------------------------|:-------------|:---------------|:--------------|
+| **dotnet test**      | **dotnet vstest**        | **dotnet pack**                                  | **dotnet migrate**                           | **dotnet sln**   | **dotnet publish** | **dotnet exec** |
+| **dotnet restore**   |                          |                                                  |                                              |              |                |               |
