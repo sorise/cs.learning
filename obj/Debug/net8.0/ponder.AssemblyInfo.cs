@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ponder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8298942d3e7673cb7b88924f5381dea700b2cac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0052da82b6171cf0b6dc08356200726c80ddd2b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ponder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ponder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
