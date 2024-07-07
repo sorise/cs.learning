@@ -1,5 +1,4 @@
-﻿
-### [.NET 5.0](#)
+﻿### [.NET 5.0](#)
 **微软决定将 .NET Framework、.NET Core 和 Xamarin 统一为一个平台，称为 .NET**。
 
 ----
