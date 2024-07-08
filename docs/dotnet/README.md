@@ -82,7 +82,7 @@
 * CTS 还为类型继承、虚方法、对象生存期等定义了相应的规则。
 * CTS 规定：所有类型最终必须从预定义的 System.Object 类型继承，这里包括值类型也是从Object继承而来的。
 
-<img src="./static/asd42gdfwewa24ctlimage.png"  width="600px"/>
+<img src="./static/asd42gdfwewa24ctlimage.png"  width="440px"/>
 
 #### [2.4 公共语言规范(Common Language Specifition, CLS)](#)
 [公共语言规范](https://learn.microsoft.com/zh-cn/dotnet/standard/language-independence)(Common Language Specifition，CLS）是CTS的一个子集，从类型、命名、事件、属性等方面对语言进行了共性的定义及规范。CLS制定了一种以.NET平台为目标的语言所必须支持的最小特征，以及该语言与其他.NET语言之间实现互操作性所需要的完备特征。例如，CLS并不去关心一种语言用什么关键字实现继承，只是关心该语言如何支持继承。
@@ -99,7 +99,7 @@
 |布尔值|true 或 false 值类型|
 |Char|UTF 16 编码单元|
 |小数|非浮点十进制数字|
-|IntPtr平台定义的大小的指针或句柄|
+|IntPtr|平台定义的大小的指针或句柄|
 |字符串|零个、一个或多个 Char 对象的集合|
 
 #### [2.5 DotNET Framework 类库](#)
