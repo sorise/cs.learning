@@ -3,7 +3,8 @@
 
 ----
 ### 目录
-- [.NET CLI 必知必会](docs/dotnet-cli)
+- [.NET 程序开发框架](docs/dotnet)
+- [.NET CLI 命令行](docs/dotnet-cli)
 - [.NET Core - C# 核心语法](docs/csharp)
 
 
