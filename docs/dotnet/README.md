@@ -15,22 +15,16 @@
 #### 1.1 发展历史
 历时20年，.NET已经前进到 [.NET 9.0](https://learn.microsoft.com/zh-cn/dotnet/core/whats-new/dotnet-9/overview)大版本。
 
-| 时间线 | .NET 版本 |语言特性|应用程序| Visual Studio | C# 版本 |
-|--------|------------|------------|------------|----------------|---------|
-| 2002   | .NET Framework 1.0, `only wins`|OOP| WebForm、WinForm| VS2002        | 1       |
-| 2005   | .NET Framework 2.0, `only wins`|`泛型<T>`，迭代器、协变| ASP.NET |VS2005   | 2|
-| 2007   | .NET Framework 3.*, `only wins` | Linq、Lambda | WPF、WCF、WF、EF| VS2008        | 3       |
-| 2010   | .NET Framework 4.0, `only wins` | 动态语言、TPL(并行) | ASP.NET MVC |Windows XP SP3 | 4       |
-| 2012   | .NET Framework 4.5, `only wins` | async、await | |Windows 7     | 5       |
-| 2013   | .NET Framework 4.5.*| | | VS2013        | 6, nameof |
-| 2015   | .NET Framework 4.6 |  | | VS2015        | 6, nameof |
-| 2016   | .NET Core 1 `基于mono` `跨平台` |  `部分移植` | | -              | -       |
-| 2017   | .NET Framework 4.7 | | | VS2017        | 7, out   |
-| 2019   | .NET Core 2|  | ASP.NET Core、EF Core| -              | 8, readonly |
-| 2019   | .NET Framework 4.8 | | | VS2019        | 7.3     |
-| 2019   | .NET Core 3 | | blazor、WPF、WinForm、UWP、Json| | -              | 8, readonly |
-| 2020   | .NET 5  `统一名称` | 支持调用JAVA |   | -              | 9, record |
-| 2021   | .NET 6   | |  MAUI 发布 | VS2022         | 10, global using |
-| 2022   | .NET 7   | |  MAUI 完善 | VS2022         | 11      |
-| 2023   | .NET 8   | |   | VS2022         | 12      |
-| 2024   | .NET 9   | `preview` |     | VS2022         | 12      |
+<img src="./static/f38b711f-dd77-49fe-9eeb-f347241a2787.png"  width="1000px"  />
+
+推荐一个在线的版本，做的非常漂亮：[Microsoft .NET History](https://time.graphics/embed?v=1&id=593132)
+
+* .**NET Framework(1.0 —— 4.8.1)**：.NET Framework是基于Windows系统的.NET框架，从2002年发布，到最新的4.8.*版本，已经停止发展。
+    * 最后的4.8.*版本依然还在维护，还是可以使用的，支持的最低操作系统是Windows 7。
+    * 如果要运行在XP系统上，则只能使用.NET Framework4版本，支持最低Windows XP SP3。
+    * .NET Framework是基于Windows系统的，因此也只能在Windows系统上运行。
+
+* .**NET Core(Core1/2/3，5/6/7/8/9)**：从2016年发布首个.NET Core1，和后面的.NET Core2/3、.NET 5/6/7/*是一个体系的，只是从.NET5开始更改了命名。这是微软推出的新一代.NET框架，用来代替原有的.NET Framework，核心特点就是开源、跨平台，这也是.NET未来重点发展、投资的地方。
+
+> 开源，采用MIT和Apache协议作为开源协议，对商业十分友好。  
+> 跨平台，支持Windows、MacOS、Linux，支持x64,、x86、ARM架构。
