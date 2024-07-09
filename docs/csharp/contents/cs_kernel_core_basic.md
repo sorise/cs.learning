@@ -88,7 +88,7 @@ static class Program
 
 |	|存在返回值	|不存在返回值|
 |:----|:----|:----|
-|存在异步	|async static Task<int> Main(string[] args)|	async static Task Main(string[] args)|
+|存在异步	|async static Task\<int\> Main(string[] args)|	async static Task Main(string[] args)|
 |不存在异步 |	static int Main(string[] args)|	static void Main(string[] args)|
 
 ```c#
