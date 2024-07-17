@@ -1,11 +1,11 @@
 ## [.NET Learning](#)
 > **介绍** ：.NET 8.0+ C# 12.0 学习笔记，全程采用.NET Core,包含了常用的语法和特殊博客性质的笔记，一起学习这门诞生于2002的编程语言。
 
-----
+
 ### 目录
-- [.NET 程序开发框架](docs/dotnet)
-- [.NET CLI 命令行](docs/dotnet-cli)
-- [.NET Core - C# 核心语法](docs/csharp)
+- [.NET 程序开发框架](docs/dotnet)： .NET 程序开发框架介绍、发展历史、JIT、AOT和C#语言版本
+- [.NET CLI 命令行](docs/dotnet-cli)：dotnet 命令、nuget命令
+- [.NET Core - C# 核心语法](docs/csharp)：C# 基本语法
 
 
 #### 参考资料
