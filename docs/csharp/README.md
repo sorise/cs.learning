@@ -4,3 +4,10 @@
 -----
 ### 目录
 -  C# 语法基础知识 [->](./contents/cs_kernel_core_basic.md)
+
+
+
+
+
+**参考资料**
+* [https://www.yuque.com/kanding/ktech](https://www.yuque.com/kanding/ktech)
