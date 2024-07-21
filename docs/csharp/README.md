@@ -3,7 +3,7 @@
 
 -----
 ### 目录
--  C# 语法基础知识 [->](./contents/cs_kernel_core_basic.md)
+* [C# 语法基础知识](./contents/cs_kernel_core_basic.md) :程序入口(顶级语句)、数据类型
 
 
 
