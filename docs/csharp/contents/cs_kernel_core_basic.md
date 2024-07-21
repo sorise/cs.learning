@@ -2,18 +2,18 @@
 > **介绍** : 学习如何创建dotnet程序，C#语言的基本知识。
 ----
 
-- [1. 程序入口Main方法](#1-程序入口main方法)
+- [1. 程序的通用结构](#1-程序的通用结构)
 - [2. 变量](#2-变量)
 - [3. 数据类型](#3-数据类型)
 
 
 ---
-### [1. 程序入口Main方法](#)
+### [1. 程序的通用结构](#)
 C#程序从方法Main开始执行的，Main方法一般位于Program类中，根据执行环境有不同的要求。
 
-1. 使用static修饰符 
+1. 使用 **static** 修饰符 
 2. 在任何名称的类中 
-3. 返回int或者void类型。
+3. 返回int或者 **void** 类型。
 
 在当前目录创建一个 C# 控制台程序
 ```shell
@@ -241,7 +241,7 @@ enum ErrorCode : ushort
 |关键字|类型|描述|
 |:---|:----|:---|
 |string|System.String|字符串类型,用于表示一系列字符。|
-|数据类型||int[]、char[] | 
+|数组类型||int[]、char[] | 
 |class|类类型| | 
 |interface|接口类型| | 
 |delegate|委托类型| 可以理解为C++中的函数指针 or std::function |
@@ -305,3 +305,157 @@ char* cptr;
 int* iptr;
 ```
 **注意**： C#中的指针类型通常需要在unsafe上下文中使用，并且在编译时需要启用unsafe选项。
+
+### [4. 关键字](#)
+关键字是 C# 编译器预定义的保留字。这些关键字不能用作标识符，但是，如果您想使用这些关键字作为标识符，可以在关键字前面加上 @ 字符作为前缀。
+
+在 C# 中，有些关键字在代码的上下文中有特殊的意义，如 get 和 set，这些被称为上下文关键字（contextual keywords）。
+
+下表列出了 C# 中的保留关键字（Reserved Keywords）和上下文关键字（Contextual Keywords）
+
+<table>
+<tbody><tr>
+<td colspan="7"><b>保留关键字</b></td>
+</tr>
+<tr>
+<td>abstract</td>
+<td>as</td>
+<td>base</td>
+<td>bool</td>
+<td>break</td>
+<td>byte</td>
+<td>case</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>char</td>
+<td>checked</td>
+<td>class</td>
+<td>const</td>
+<td>continue</td>
+<td>decimal</td>
+</tr>
+<tr>
+<td>default</td>
+<td>delegate</td>
+<td>do</td>
+<td>double</td>
+<td>else</td>
+<td>enum</td>
+<td>event</td>
+</tr>
+<tr>
+<td>explicit</td>
+<td>extern</td>
+<td>false</td>
+<td>finally</td>
+<td>fixed</td>
+<td>float</td>
+<td>for</td>
+</tr>
+<tr>
+<td>foreach</td>
+<td>goto</td>
+<td>if</td>
+<td>implicit</td>
+<td>in</td>
+<td>in (generic<br> modifier)</td>
+<td>int</td>
+</tr>
+<tr>
+<td>interface</td>
+<td>internal</td>
+<td>is</td>
+<td>lock</td>
+<td>long</td>
+<td>namespace</td>
+<td>new</td>
+</tr>
+<tr>
+<td>null</td>
+<td>object</td>
+<td>operator</td>
+<td>out</td>
+<td>out<br> (generic<br> modifier)</td>
+<td>override</td>
+<td>params</td>
+</tr>
+<tr>
+<td>private</td>
+<td>protected</td>
+<td>public</td>
+<td>readonly</td>
+<td>ref</td>
+<td>return</td>
+<td>sbyte</td>
+</tr>
+<tr>
+<td>sealed</td>
+<td>short</td>
+<td>sizeof</td>
+<td>stackalloc</td>
+<td>static</td>
+<td>string</td>
+<td>struct</td>
+</tr>
+<tr>
+<td>switch</td>
+<td>this</td>
+<td>throw</td>
+<td>true</td>
+<td>try</td>
+<td>typeof</td>
+<td>uint</td>
+</tr>
+<tr>
+<td>ulong</td>
+<td>unchecked</td>
+<td>unsafe</td>
+<td>ushort</td>
+<td>using</td>
+<td>virtual</td>
+<td>void</td>
+</tr>
+<tr>
+<td>volatile</td>
+<td>while</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="7"><b>上下文关键字</b></td>
+</tr>
+<tr>
+<td>add</td>
+<td>alias</td>
+<td>ascending</td>
+<td>descending</td>
+<td>dynamic</td>
+<td>from</td>
+<td>get</td>
+</tr>
+<tr>
+<td>global</td>
+<td>group</td>
+<td>into</td>
+<td>join</td>
+<td>let</td>
+<td>orderby</td>
+<td>partial<br>(type)</td>
+</tr>
+<tr>
+<td>partial<br> (method)</td>
+<td>remove</td>
+<td>select</td>
+<td>set</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+### [5. 命名空间](#)
+C# 程序由一个或多个文件组成。 每个文件均包含零个或多个命名空间。 一个命名空间包含类、结构、接口、枚举、委托等类型或其他命名空间。
