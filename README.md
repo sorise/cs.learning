@@ -4,7 +4,8 @@
 
 ### 目录
 **.NET架构**
-- [.NET 程序开发框架](docs/dotnet)： .NET 程序开发框架介绍、发展历史、JIT、AOT和C#语言版本
+- [.NET 程序开发框架](docs/dotnet)： .NET 程序开发框架介绍、发展历史、JIT、AOT和C#
+- [C# 发展历史](https://learn.microsoft.com/zh-cn/dotnet/csharp/whats-new/csharp-version-history): 介绍了 C# 语言每个主要版本的发展历史
 
 **工具**
 - [.NET CLI 命令行](docs/dotnet-cli)：dotnet 命令、nuget命令
