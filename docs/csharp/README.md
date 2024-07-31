@@ -3,7 +3,8 @@
 
 -----
 ### 目录
-* [C# 语法基础知识](./contents/cs_kernel_core_basic.md) :程序入口(顶级语句)、数据类型
+* [C# 语法基础知识](./contents/cs_kernel_core_basic.md) : 程序入口(顶级语句)、变量、数据类型、关键字、命名空间、注释、预处理器指令。
+* [C# 编程前奏内容](./contents/cs_before_class_basic.md) : 类型转换、C# 流程控制 
 
 
 
