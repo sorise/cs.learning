@@ -214,7 +214,6 @@ C# 把数据类型分为值类型、指针类型和引用类型, 值类型存储
 
 > 值类型直接存储数据的实际值，它们是分配在栈上的。当值类型被赋值给另一个变量或传递给函数时，复制的是该值本身，而不是其引用。C#中的值类型有以下几种：
 
-
 |关键字|类型|描述|	范围|	默认值|
 |:---|:----|:---|:---|:---|
 |bool|System.Boolean|布尔值|True 或 False|	False|
@@ -231,7 +230,7 @@ C# 把数据类型分为值类型、指针类型和引用类型, 值类型存储
 |ulong|System.UInt64|64 位无符号整数类型|	0 到 18,446,744,073,709,551,615|0|
 |ushort|System.UInt16|16 位无符号整数类型|	0 到 65,535|	0|
 |enum|System.Enum| |  | |
-
+|[struct](https://learn.microsoft.com/zh-cn/dotnet/csharp/language-reference/builtin-types/struct)| | 支持readonly struct、 [ref struct](https://learn.microsoft.com/zh-cn/dotnet/csharp/language-reference/builtin-types/ref-struct) |  | |
 ```c#
 enum ErrorCode : ushort
 {
@@ -363,6 +362,62 @@ foreach(String name in Enum.GetNames(typeof(MachineState)))
     Console.WriteLine($"{name}: {(int)value} ");
 }
 ```
+#### [4.7 结构类型](#)
+结构类型（**“structure type”**或**“struct type”**）是一种可封装数据和相关功能的值类型 。 使用 struct 关键字定义结构类型：
+
+```c#
+public class SizeClass
+{
+    public int Width { get; set; }
+    public int Length { get; set; }
+}
+
+public struct SizeStruct
+{
+    public int Width { get; set; }
+    public int Length { get; set; }
+}
+
+SizeStruct sizeStruct = new SizeStruct{Length = 10, Width = 10};
+
+Console.WriteLine("赋值前：width= {0},length= {1}", sizeStruct.Width, sizeStruct.Length);
+ 
+var copyOfSizeStruct = sizeStruct;
+copyOfSizeStruct.Length = 5;
+copyOfSizeStruct.Width = 5;
+
+Console.WriteLine("赋值后：width= {0},length= {1}", sizeStruct.Width, sizeStruct.Length);
+Console.WriteLine("赋值 copyOfSizeStruct：width= {0},length= {1}", copyOfSizeStruct.Width, copyOfSizeStruct.Length);
+```
+
+[C#中struct和class的区别详解](https://www.cnblogs.com/jjg0519/p/10341010.html):
+* struct是值类型，**创建一个struct类型的实例被分配在栈上**。
+* class是引用类型，创建一个class类型实例被分配在托管堆上。但struct和class的区别远不止这么简单。
+* 结构可定义构造函数，但不能定义析构函数。但是，您不能为结构定义无参构造函数。无参构造函数(默认)是自动定义的，且不能被改变。
+* 与类不同，结构不能继承其他的结构或类,**没有继承关系**。
+* **结构可实现一个或多个接口**。
+* 结构成员不能指定为 abstract、virtual 或 protected。
+* 当您使用 New 操作符创建一个结构对象时，会调用适当的构造函数来创建结构。与类不同，结构可以不使用 New 操作符即可被实例化。
+```c#
+struct Point
+{
+    public int X;
+    public int Y;
+}
+
+Point p = new Point();  // 使用new操作符
+Point q;                // 直接声明
+q.X = 10;
+q.Y = 20;
+```
+* 如果不使用 New 操作符，只有在所有的字段都被初始化之后，字段才被赋值，对象才被使用。
+* **结构变量通常分配在栈上，这使得它们的创建和销毁速度更快。但是，如果将结构用作类的字段，且这个类是引用类型，那么结构将存储在堆上**。
+* 结构默认情况下是可变的，这意味着你可以修改它们的字段。但是，如果结构定义为只读，那么它的字段将是不可变的。
+
+
+结构提供了一种轻量级的数据类型，适用于表示简单的数据结构，具有较好的性能特性和值语义：
+
+结构可带有方法、字段、索引、属性、运算符方法和事件，适用于表示轻量级数据的情况，如坐标、范围、日期、时间等。
 
 ### [5. 引用类型](#)
 引用类型存储的是对象的引用，而不是实际的数据。引用类型的变量在栈上存储指向堆中对象的内存地址。当引用类型被赋值给另一个变量或传递给函数时，复制的是对象的引用，而不是对象本身。
